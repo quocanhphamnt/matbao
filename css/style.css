@@ -6,6 +6,8 @@
     --color-black: #363636;
     --color-white: #fff;
     --color-dark: #282828;
+    --color-green: #7fca27;
+    --color-blue: #3C97E2;
 }
 
 body {
@@ -15,6 +17,10 @@ body {
 
 .bg-red {
     background: var(--color-red);
+}
+
+.bg-white {
+    background: var(--color-white);
 }
 
 .bg-grey {
@@ -338,7 +344,7 @@ ul {
 }
 
 .navbar-nav .new {
-    background: #7fca27;
+    background: var(--color-green);
     color: var(--color-white);
     line-height: 16px;
     font-size: 11px;
@@ -562,7 +568,7 @@ ul {
 
 .base .viewMap {
     display: block;
-    color: #3C97E2;
+    color: var(--color-blue);
     text-decoration: underline;
     cursor: pointer;
 }
@@ -625,12 +631,94 @@ ul {
     display: flex;
     flex-direction: row-reverse;
     justify-content: end;
+    margin-top: 15px;
 }
 
-.copyright .so-icon a {
+.copyright .so-icon .logo {
     border-radius: 50%;
     margin-right: 20px;
+    overflow: hidden;
+}
+
+.copyright .so-icon .logo img {
     width: 30px;
     height: 30px;
-    overflow: hidden;
+}
+
+/* Body */
+.content-img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5em;
+}
+
+.content-img .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-img .content * {
+    margin: 0.5em 0;
+}
+
+.content-img .content .btn {
+    background: var(--color-green);
+    width: 50%;
+    padding: 10px 0;
+    border-radius: 3px;
+    color: var(--color-white);
+    margin-right: 10px;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+}
+
+.content-img .content a {
+    color: var(--color-dark);
+}
+
+.content-img .content a:hover {
+    color: var(--color-blue);
+}
+
+.video-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+}
+
+.video-content video {
+    width: 90%;
+    max-width: calc(100vw - 30px);
+    display: block;
+    margin: 0 auto 32px;
+}
+
+.package {
+    margin: 5em 0;
+}
+
+.package * {
+    margin: 1em 0;
+}
+
+.video-content ul {
+    list-style: square;
+}
+
+.package .ls-icon {
+    display: block;
+    text-align: center;
+}
+
+.package .ls-icon .item {
+    display: inline-block;
+    margin: 10px 12px;
+}
+
+.package .ls-icon .item img {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 0 auto 12px;
 }
