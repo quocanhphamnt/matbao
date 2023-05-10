@@ -37,4 +37,8 @@ $( document ).ready(function() {
             $('.lable').next().hide();
         }
     });
+
+    $('.lazyRead .item .text strong').on('click', event => {
+        $(event.currentTarget).next().toggle();
+    });
 });

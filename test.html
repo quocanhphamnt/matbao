@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+  <!-- Demo styles -->
+    <style>
+        .lazyRead {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .lazyRead .swiper-wrapper {
+        }
+    </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+    <div class="container">
+        <div class="lazyRead">
+            <div class="col-md-6 swiper text">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <strong>Lịch: Trực tuyến tích hợp được thiết kế cho các nhóm, giảm thời gian lên kế hoạch cho bạn</strong>
+                        <ul>
+                            <li>Lịch trực tuyến tích hợp được thiết kế cho các nhóm. Giảm thời gian lên kế hoạch và dành nhiều thời gian hơn để làm việc.</li>
+                            <li>Lên lịch sự kiện nhanh chóng bằng cách kiểm tra xem khi nào các đồng nghiệp rảnh và sắp xếp lịch phù hợp.</li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <strong>Lịch: Trực tuyến tích hợp được thiết kế cho các nhóm, giảm thời gian lên kế hoạch cho bạn</strong>
+                        <ul>
+                            <li>Lịch trực tuyến tích hợp được thiết kế cho các nhóm. Giảm thời gian lên kế hoạch và dành nhiều thời gian hơn để làm việc.</li>
+                            <li>Lên lịch sự kiện nhanh chóng bằng cách kiểm tra xem khi nào các đồng nghiệp rảnh và sắp xếp lịch phù hợp.</li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <strong>Lịch: Trực tuyến tích hợp được thiết kế cho các nhóm, giảm thời gian lên kế hoạch cho bạn</strong>
+                        <ul>
+                            <li>Lịch trực tuyến tích hợp được thiết kế cho các nhóm. Giảm thời gian lên kế hoạch và dành nhiều thời gian hơn để làm việc.</li>
+                            <li>Lên lịch sự kiện nhanh chóng bằng cách kiểm tra xem khi nào các đồng nghiệp rảnh và sắp xếp lịch phù hợp.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="col-md-6 swiper img">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://www.matbao.net/Content/images/WorkSpace/g1-minhoa-1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://www.matbao.net/Content/images/WorkSpace/g1-minhoa-2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://www.matbao.net/Content/images/WorkSpace/g1-minhoa-3.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var text = new Swiper(".text", {
+        slidesPerView: 3,
+        direction: "vertical",
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+        },
+    });
+    var img = new Swiper(".img", {
+        effect: "fade",
+        thumbs: {
+            swiper: text,
+        },
+    });
+  </script>
+</body>
+</html>
