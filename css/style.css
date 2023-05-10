@@ -9,6 +9,7 @@
     --color-green: #7fca27;
     --color-blue: #3C97E2;
     --color-green-hover: #619e19;
+    --color-grey-hover: #afafaf;
 }
 
 body {
@@ -75,6 +76,18 @@ body {
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
+    }
+}
+
+@media (min-width: 768px) {
+    .visible-xs {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .visible-md {
+        display: none !important;
     }
 }
 
@@ -243,12 +256,12 @@ ul {
     margin-left: 5px;
 }
 
-.active {
+.active-nav-link {
     border-bottom: var(--color-red) 2px solid;
     padding-bottom: 0;
 }
 
-.active::after {
+.active-nav-link::after {
     color: var(--color-red) !important;
     font-weight: bold;
 }
@@ -439,9 +452,6 @@ ul {
 }
 
 @media (min-width: 768px) {
-    .visible-xs {
-        display: none !important;
-    }
 
     .footer-hotline a {
         font-size: 18px;
@@ -533,9 +543,6 @@ ul {
 }
 
 @media (max-width: 768px) {
-    .visible-md {
-        display: none !important;
-    }
 
     .footer-hotline a {
         font-size: 25px;
@@ -734,9 +741,18 @@ ul {
     margin: 0 auto 12px;
 }
 
-.package .card .card-title {
-    font-size: 27px;
-    text-align: center;
+@media (min-width: 768px) {
+    .package .card .card-title {
+        font-size: 27px;
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+   .package .card .card-title {
+        font-size: 27px;
+        text-align: center;
+    }  
 }
 
 .package .card .pricearea {
@@ -834,9 +850,9 @@ ul {
     color: var(--color-dark);
 }
 
-/* .lazyRead {
-    min-height: 480px;
-} */
+.lazyRead {
+    display: flex;
+}
 
 .lazyRead .item {
     display: flex;
@@ -857,7 +873,7 @@ ul {
     width: 3px;
     margin-left: -10px;
     position: absolute;
-    background: var(--color-grey);
+    background: var(--color-grey-hover);
     left: 0;
     height: 100%;
 }
@@ -868,28 +884,24 @@ ul {
 }
 
 .lazyRead .inprocess {
-    background: var(--color-blue);
-    animation: increase-height 7s infinite;
-}
-/*     
-@media (max-width: 768px) {
-    .lazyRead .item .img {
-        width: 100%;
-        height: auto;
-    }
+    background: var(--color-blue) !important;
+    animation: increase-height 3s infinite;
 }
 
-@media (min-width: 768px) {
-    .lazyRead .item .img {
-        position: absolute;
-        right: 0;
-        top: 0;
-        transform: translateY(calc(-35% * var(--i)));
-    }
-} */
-
+.lazyRead .stop {
+    background: var(--color-blue) !important;
+}
 
 .lazyRead img {
     width: 100%;
     height: auto;
+}
+
+.lazyRead .img {
+    text-align: center;
+}
+
+.lazyRead .img img {
+    width: auto;
+    height: 350px;
 }
