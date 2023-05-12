@@ -135,4 +135,28 @@ $( document ).ready(function() {
         $(event.currentTarget).toggleClass('morong');
         $(event.currentTarget).toggleClass('thugon');
     });
+
+    $('.faq strong').on('click', event => {
+        $(event.currentTarget).children().toggleClass('active')
+        $(event.currentTarget).next().toggle();
+    });
+
+    var link = $('.stickyMenu a');
+    $(document).scroll( () => {
+        link.each(function() {
+
+            var section = $(this).attr('href');
+            var offset = $(section).offset().top;
+            var height = $(section).outerHeight();
+            var bottom = offset + height;
+            var scrollPosition = $(document).scrollTop();
+            var stickyHeight = 77;
+    
+            if(scrollPosition < bottom - stickyHeight && scrollPosition >= offset - stickyHeight){
+                $(this).addClass('active');
+            } else{
+                $(this).removeClass('active');
+            }    
+        });
+    });
 });

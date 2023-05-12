@@ -203,24 +203,24 @@ ul {
 
 @keyframes logoMove {
     0% {
-        background: url(https://www.matbao.net/Content/images/Logo-TOP-100-2023.svg) center no-repeat;
+        background: url(../images/Logo-TOP-100-2023.svg) center no-repeat;
         background-size: 170px 40px;
     }
     
     49% {
-        background: url(https://www.matbao.net/Content/images/Logo-TOP-100-2023.svg) center no-repeat;
+        background: url(../images/Logo-TOP-100-2023.svg) center no-repeat;
         background-size: 170px 40px;
     }
     50% {
-        background: url(https://www.matbao.net/Content/images/TOP_1_VIET_NAM_02.svg) center no-repeat;
+        background: url(../images/TOP_1_VIET_NAM_02.svg) center no-repeat;
         background-size: 170px 40px;
     }
     99% {
-        background: url(https://www.matbao.net/Content/images/TOP_1_VIET_NAM_02.svg) center no-repeat;
+        background: url(../images/TOP_1_VIET_NAM_02.svg) center no-repeat;
         background-size: 170px 40px;
     }
     100% {
-        background: url(https://www.matbao.net/Content/images/Logo-TOP-100-2023.svg) center no-repeat;
+        background: url(../images/Logo-TOP-100-2023.svg) center no-repeat;
         background-size: 170px 40px;
     }
 }
@@ -441,7 +441,7 @@ ul {
     z-index: 1420;
     width: 60px;
     height: 120px;
-    background: url(https://www.matbao.net/Content/images/ipv6_ready_logo.png) top center no-repeat;
+    background: url(../images/ipv6_ready_logo.png) top center no-repeat;
     background-size: 100% auto;
 }
 
@@ -839,7 +839,7 @@ ul {
 }
 
 .package .card .more-info .arrow-down {
-    background: url(https://www.matbao.net/Content/images/more-info-gray.svg) no-repeat;
+    background: url(../images/more-info-gray.svg) no-repeat;
     background-size: 35px;
     height: 19px;
     width: 35px;
@@ -881,6 +881,10 @@ ul {
 .stickyMenu ul li a {
     text-decoration: none;
     color: var(--color-dark);
+}
+
+.stickyMenu .active {
+    color: var(--color-red);
 }
 
 .lazyRead {
@@ -971,7 +975,7 @@ ul {
     top: 8px;
     right: 20px;
     display: inline-block;
-    background: url(https://www.matbao.net/Content/images/WorkSpace/vec_up.svg) center no-repeat;
+    background: url(../images/WorkSpace/vec_up.svg) center no-repeat;
     background-size: contain;
 }
 
@@ -983,7 +987,7 @@ ul {
     bottom: 8px;
     right: 20px;
     display: inline-block;
-    background: url(https://www.matbao.net/Content/images/WorkSpace/vec_down.svg) center no-repeat;
+    background: url(../images/WorkSpace/vec_down.svg) center no-repeat;
     background-size: contain;
 }
 
@@ -995,7 +999,7 @@ ul {
     bottom: 8px;
     right: 20px;
     display: inline-block;
-    background: url(https://www.matbao.net/Content/images/WorkSpace/vec_up.svg) center no-repeat;
+    background: url(../images/WorkSpace/vec_up.svg) center no-repeat;
     background-size: contain;
 }
 
@@ -1007,7 +1011,7 @@ ul {
     top: 8px;
     right: 20px;
     display: inline-block;
-    background: url(https://www.matbao.net/Content/images/WorkSpace/vec_down.svg) center no-repeat;
+    background: url(../images/WorkSpace/vec_down.svg) center no-repeat;
     background-size: contain;
 }
 
@@ -1071,10 +1075,6 @@ ul {
     }
 }
 
-.tableCompare {
-    
-}
-
 .tableCompare .compare td {
     border: solid 1px var(--color-grey-hover);
 }
@@ -1104,7 +1104,7 @@ ul {
 }
 
 .tableCompare .compare tbody .check-ok {
-    background-image: url(https://www.matbao.net/Content/images/checked.svg);
+    background-image: url(../images/checked.svg);
     background-size: cover;
     display: inline-block;
     width: 21px;
@@ -1112,7 +1112,7 @@ ul {
 }
 
 .tableCompare .compare tbody .check-no {
-    background-image: url(https://www.matbao.net/Content/images/cancel-01.svg);
+    background-image: url(../images/cancel-01.svg);
     background-size: cover;
     display: inline-block;
     width: 21px;
@@ -1123,7 +1123,7 @@ ul {
     color: var(--color-grey-hover);
     font-size: 14px;
     padding-left: 20px;
-    background: url(https://www.matbao.net/Content/images/WorkSpace/vec_up.svg) left center no-repeat;
+    background: url(../images/WorkSpace/vec_up.svg) left center no-repeat;
     background-size: 12px;
     cursor: pointer;
 }
@@ -1132,7 +1132,7 @@ ul {
     color: var(--color-grey-hover);
     font-size: 14px;
     padding-left: 20px;
-    background: url(https://www.matbao.net/Content/images/WorkSpace/vec_down.svg) left center no-repeat;
+    background: url(../images/WorkSpace/vec_down.svg) left center no-repeat;
     background-size: 12px;
     cursor: pointer;
 }
@@ -1184,7 +1184,7 @@ ul {
     width: 58px;
     height: 84px;
     display: block;
-    background: url(https://www.matbao.net/Content/images/Wordpress-Hosting-2018/bookmark_goc.svg) center no-repeat;
+    background: url(../images/Wordpress-Hosting-2018/bookmark_goc.svg) center no-repeat;
     background-size: contain;
     position: absolute;
     right: 0;
@@ -1196,7 +1196,7 @@ ul {
     width: 32px;
     height: 32px;
     display: block;
-    background: url(https://www.matbao.net/Content/images/Wordpress-Hosting-2018/icon_GWS_hotline.svg) center no-repeat;
+    background: url(../images/Wordpress-Hosting-2018/icon_GWS_hotline.svg) center no-repeat;
     background-size: contain;
     position: absolute;
     right: 12px;
@@ -1224,4 +1224,36 @@ ul {
     bottom: 15px;
     right: 15px;
     height: 45px;
+}
+
+.faq {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq span {
+    margin-bottom: 15px;
+}
+
+.faq strong {
+    cursor: pointer;
+}
+
+.faq i {
+    color: var(--color-red);
+    margin-right: 10px;
+}
+
+.faq i::before {
+    content: "►";
+}
+
+.faq i.active::before {
+    content: "▼";
+}
+
+.faq ul {
+    margin-top: 15px;
+    display: none;
 }
