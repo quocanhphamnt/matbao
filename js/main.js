@@ -107,4 +107,32 @@ $( document ).ready(function() {
         $currently_selected.hide();
         $next_selected.show();
     },3000);
+
+    $('.tableCompare .toggle-area .toggle').on('click', event => {
+        if ($(event.currentTarget).hasClass('open')) {
+            $(event.currentTarget).parents().find('.tr-hide').show();
+            $(event.currentTarget).text('Thu gọn tất cả');
+            $('.tableCompare .compare tbody .morong-thugon').text('Ẩn bớt tính năng');
+            $('.tableCompare .compare tbody .morong-thugon').toggleClass('morong');
+            $('.tableCompare .compare tbody .morong-thugon').toggleClass('thugon');
+        } else {
+            $(event.currentTarget).parents().find('.tr-hide').hide();
+            $(event.currentTarget).text('Mở rộng tất cả');
+            $('.tableCompare .compare tbody .morong-thugon').text('Xem thêm tính năng');
+            $('.tableCompare .compare tbody .morong-thugon').toggleClass('morong');
+            $('.tableCompare .compare tbody .morong-thugon').toggleClass('thugon');
+        }
+        $(event.currentTarget).toggleClass('open');
+        $(event.currentTarget).toggleClass('close');
+    });
+
+    $('.tableCompare .compare tbody .morong-thugon').on('click', event => {
+        if ($(event.currentTarget).hasClass('morong')) {
+            $(event.currentTarget).text('Ẩn bớt tính năng');
+        } else {
+            $(event.currentTarget).text('Xem thêm tính năng');
+        }
+        $(event.currentTarget).toggleClass('morong');
+        $(event.currentTarget).toggleClass('thugon');
+    });
 });

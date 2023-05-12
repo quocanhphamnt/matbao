@@ -41,6 +41,7 @@ body {
 
 .btn-green {
     border: 1px solid;
+    border: 1px solid var(--color-green);
     background: var(--color-green);
     color: var(--color-white);
     width: 100%;
@@ -52,6 +53,23 @@ body {
 .btn-green:hover {
     background: var(--color-green-hover);
     color: var(--color-white);
+}
+
+.btn-white {
+    border: 1px solid;
+    border: 1px solid var(--color-green);
+    background: var(--color-white);
+    color: var(--color-green);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-white:hover {
+    border: 1px solid var(--color-green-hover);
+    background: var(--color-white);
+    color: var(--color-green-hover);
 }
 
 .container {
@@ -412,6 +430,21 @@ ul {
     margin: 0;
 }
 
+.footer-company {
+    position: relative;
+}
+
+.footer-company .ipV6icon {
+    position: absolute;
+    top: -2px;
+    right: 20px;
+    z-index: 1420;
+    width: 60px;
+    height: 120px;
+    background: url(https://www.matbao.net/Content/images/ipv6_ready_logo.png) top center no-repeat;
+    background-size: 100% auto;
+}
+
 .footer-company a {
     color: var(--color-grey);
     text-decoration: none;
@@ -721,7 +754,7 @@ ul {
 }
 
 .video-content ul {
-    list-style: square;
+    list-style: unset;
 }
 
 .package .ls-icon {
@@ -862,7 +895,7 @@ ul {
 }
 
 .lazyRead ul {
-    list-style: square;
+    list-style: unset;
 }
 
 .lazyRead .item .text strong {
@@ -904,4 +937,291 @@ ul {
 .lazyRead .img img {
     width: auto;
     height: 350px;
+}
+
+.tableCompare .toggle-area {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.tableCompare .toggle-area .toggle {
+    width: 170px;
+    height: 45px;
+    padding: 0 0 0 20px;
+    display: flex;
+    align-items: center;
+    color: var(--color-blue);
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    border: solid 1px #e9e9e9;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+.tableCompare .toggle-area .open::before {
+    content: ' ';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    display: inline-block;
+    background: url(https://www.matbao.net/Content/images/WorkSpace/vec_up.svg) center no-repeat;
+    background-size: contain;
+}
+
+.tableCompare .toggle-area .open::after {
+    content: ' ';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 8px;
+    right: 20px;
+    display: inline-block;
+    background: url(https://www.matbao.net/Content/images/WorkSpace/vec_down.svg) center no-repeat;
+    background-size: contain;
+}
+
+.tableCompare .toggle-area .close::before {
+    content: ' ';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 8px;
+    right: 20px;
+    display: inline-block;
+    background: url(https://www.matbao.net/Content/images/WorkSpace/vec_up.svg) center no-repeat;
+    background-size: contain;
+}
+
+.tableCompare .toggle-area .close::after {
+    content: ' ';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    display: inline-block;
+    background: url(https://www.matbao.net/Content/images/WorkSpace/vec_down.svg) center no-repeat;
+    background-size: contain;
+}
+
+@media (min-width: 768px) {
+    .tableCompare .compare td {
+        width: 200px;
+    }
+
+    .tableCompare .compare tbody td {
+        padding: 16px 24px;
+    }
+    
+    .tableCompare .compare thead td {
+        padding: 24px 16px;
+    }
+    
+    .tableCompare .compare td:first-child{
+        width: 340px;
+    }
+    
+    .tableCompare .compare thead {
+        position: sticky;
+        top: 77px;
+    }
+
+    .tableCompare .compare tbody .icon {
+        width: 20px;
+        height: 20px;
+        display: block;
+        float: left;
+        margin: 0 20px 0 0;
+    }
+    
+    .tableCompare .compare tbody .icon img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    
+    .tableCompare .compare tbody .text {
+        display: block;
+        float: left;
+        width: calc(100% - 40px);
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .tableCompare .compare tbody .icon {
+        width: 20px;
+        height: 20px;
+        display: block;
+        margin: 0 20px 0 0;
+        margin: 0 auto;
+    }
+    
+    .tableCompare .compare tbody .icon img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+
+.tableCompare {
+    
+}
+
+.tableCompare .compare td {
+    border: solid 1px var(--color-grey-hover);
+}
+
+.tableCompare .compare td:nth-child(2),.tableCompare .compare td:nth-child(3),.tableCompare .compare td:nth-child(4),.tableCompare .compare td:nth-child(5) {
+    text-align: center;
+}
+
+.tableCompare .compare thead td * {
+    display: block;
+}
+
+.tableCompare .compare thead strong {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.tableCompare .compare thead i {
+    font-style: normal;
+    font-size: 14px;
+    color: var(--color-grey-hover);
+    font-weight: bold;
+}
+
+.tableCompare .compare thead p {
+    font-size: 14px;
+}
+
+.tableCompare .compare tbody .check-ok {
+    background-image: url(https://www.matbao.net/Content/images/checked.svg);
+    background-size: cover;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+}
+
+.tableCompare .compare tbody .check-no {
+    background-image: url(https://www.matbao.net/Content/images/cancel-01.svg);
+    background-size: cover;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+}
+
+.tableCompare .compare tbody .thugon {
+    color: var(--color-grey-hover);
+    font-size: 14px;
+    padding-left: 20px;
+    background: url(https://www.matbao.net/Content/images/WorkSpace/vec_up.svg) left center no-repeat;
+    background-size: 12px;
+    cursor: pointer;
+}
+
+.tableCompare .compare tbody .morong {
+    color: var(--color-grey-hover);
+    font-size: 14px;
+    padding-left: 20px;
+    background: url(https://www.matbao.net/Content/images/WorkSpace/vec_down.svg) left center no-repeat;
+    background-size: 12px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .tablePos thead td:first-child {
+        width: 230px;
+    }
+}
+
+.tablePos td {
+    border: solid 1px var(--color-grey-hover);
+}
+
+.tablePos ul {
+    list-style: unset;
+}
+
+.tablePos thead td {
+    line-height: 28px;
+    padding: 25px 15px;
+    font-size: 16px;
+    text-align: center;
+    width: calc(50% - 115px);
+}
+
+.tablePos tbody td {
+    padding: 16px;
+}
+
+.tablePos tbody td:first-child {
+    vertical-align: middle;
+}
+
+.tablePos tbody .border-0 td {
+    border: none;
+    padding: 0;
+    padding-top: 8px;
+}
+
+.support {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+.support::before {
+    width: 58px;
+    height: 84px;
+    display: block;
+    background: url(https://www.matbao.net/Content/images/Wordpress-Hosting-2018/bookmark_goc.svg) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+}
+
+.support::after {
+    width: 32px;
+    height: 32px;
+    display: block;
+    background: url(https://www.matbao.net/Content/images/Wordpress-Hosting-2018/icon_GWS_hotline.svg) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    content: "";
+}
+
+.support strong {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.support img {
+    display: block;
+    margin: 0 auto;
+    height: 350px;
+}
+
+.support .btn {
+    width: 200px;
+}
+
+.support .googlecloud {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    height: 45px;
 }
